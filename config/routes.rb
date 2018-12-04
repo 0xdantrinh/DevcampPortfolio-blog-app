@@ -14,4 +14,11 @@ Rails.application.routes.draw do
   get 'contact', to: 'pages#contact'
 
   root to: 'pages#home'
+
+  get 'blogs/*missing', to: 'blogs#missing'
+
+  get 'query/:something/:another_one', to: 'pages#something'
+
+  get 'query/:something', to: 'pages#something'
+
 end
