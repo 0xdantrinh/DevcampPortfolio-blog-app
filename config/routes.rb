@@ -3,6 +3,8 @@ Rails.application.routes.draw do
 
   get 'angular-items', to: 'portfolios#angular'
 
+  get 'ruby-rails-items', to: 'portfolios#ruby'
+
   get 'portfolio/:id', to: 'portfolios#show', as: 'portfolio_show'
   get 'pages/home'
   get 'pages/about'
