@@ -30,4 +30,6 @@ Rails.application.routes.draw do
 
   get 'query/:something', to: 'pages#something'
 
+  mount ActionCable.server => '/cable'
+
 end
