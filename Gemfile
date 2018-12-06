@@ -73,4 +73,6 @@ gem 'kaminari'
 
 gem 'jquery-ui-rails'
 
+gem 'redis', '~> 4.1.0.beta1'
+
 

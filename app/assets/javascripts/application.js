@@ -16,5 +16,6 @@
 //= require bootstrap-sprockets
 //= require activestorage
 //= require html.sortable
+//= require cable
 //= require turbolinks
 //= require_tree .
