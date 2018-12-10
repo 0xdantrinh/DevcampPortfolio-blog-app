@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+  protect_from_forgery with: :null_session
+
   layout 'portfolio'
   access all: [:show, :index, :angular], user: {except: [:destroy, :new, :create, :edit, :update, :sort]}, site_admin: :all
 
@@ -72,6 +74,6 @@ class PortfoliosController < ApplicationController
   end
 
   def portfolio_params
-    params.require(:portfolio).permit(:title, :subtitle, :body, technologies_attributes: [:name])
+    params.require(:portfolio).permit(:title, :subtitle, :body, :main_image, :thumb_image, technologies_attributes: [:name])
   end
 end
